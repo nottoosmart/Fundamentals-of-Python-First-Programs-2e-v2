@@ -459,7 +459,6 @@ class EasyRadiobuttonGroup(Tkinter.Frame):
         self._buttons = dict()
         self._orient = orient
         self._buttonRow = self._buttonColumn = 0
-        self._root = ""
 
     def addRadiobutton(self, text, command = lambda : 0):
         """Creates a button with the given text and command, adds it to the group,
@@ -1138,3 +1137,17 @@ class EasyPanel(Tkinter.Frame):
                  rowspan = 1, columnspan = 1, background = "white"):
         """Creates and returns a panel."""
         return EasyPanel(self, row, column, rowspan, columnspan, background)
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+   

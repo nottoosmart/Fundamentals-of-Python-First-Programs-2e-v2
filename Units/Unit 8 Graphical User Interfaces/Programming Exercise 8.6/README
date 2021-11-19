@@ -1,0 +1,12 @@
+Programming Exercise 8.6
+      Add radio button options for filing status to the tax calculator program of Project 1. The user selects one of these options to determine the tax rate. The Single option’s
+      rate is 20%. The Married option is 15%. The Divorced option is 10%. The default option is Single.
+
+      Be sure to use the field names provided in the comments in your starter code.
+
+      An example of the program is shown below:
+
+      - figure-8.6-1
+          The user interface for Tax calculator with inputs Income and dependents. The input textbox has value zero point zero by default and the dependents textbox has value 
+          zero by default. It is followed by a Compute button and a textbox with caption Total tax and default value zero point zero. The right side of the window has three 
+          option buttons labelled single, married and divorced. the text Tax calculator is written below.

@@ -1,0 +1,12 @@
+Programming Exercise 8.2
+      Write a GUI-based program that implements the bouncy program discussed in the program in Programing Project 4 of Chapter 3 of your book.
+
+      Be sure to use the field names provided in the comments in your starter code.
+
+      An example of the program is shown below:
+
+          figure-8.2-1
+            - The screen with a distance calculator for number of bounces shown. The title bar has a title, Bouncy. The window takes three inputs from the user, the initial 
+            height, the bounciness index and the number of bounces in three textboxes. The initial height and bounciness index textboxes has zero point zero written by default 
+            and the textbox number of bounces has a zero by default. It is followed by a button labelled Compute. Another textbox with default value zero point zero, below 
+            the compute button, with title total distance is shown.

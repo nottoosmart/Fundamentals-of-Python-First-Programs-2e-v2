@@ -1,0 +1,8 @@
+Programming Exercise 4.3
+      Modify the scripts of Projects 1 and 2 to encrypt and decrypt entire files of text.
+
+      An example of the program interface is shown below:
+
+          Enter the input file name: encrypted.txt
+          Enter the output file name: a
+          Enter the distance value: 3

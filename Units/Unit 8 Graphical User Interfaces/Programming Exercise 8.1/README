@@ -1,0 +1,14 @@
+Programming Exercise 8.1
+      Open the taxformwithgui.py file and write a GUI-based program that implements the tax calculator program shown in the figures below.
+
+      figure-8-2A
+      - The first screenshot of the tax calulator program contains 2 input fields, 1 output field, and 1 compute button. The 2 input fields are, gross income, and dependents. 
+      The output field is, total tax.
+
+      figure-8-2B
+      - The second screenshot of the tax calculator program contains the inputs entered and the total tax calculated are as follows. Gross income, 25000.00. Dependents, 2. 
+      Total Tax, 1800.00.
+
+      Figure 8-2 A GUI-based tax calculator program (See images in folder)
+
+      Be sure to use the field names provided in the comments in your starter code.

@@ -1,0 +1,14 @@
+Programming Exercise 8.5
+      Write a GUI-based program that plays a guess-the-number game in which the roles of the computer and the user are the reverse of what they are in the Case Study of 
+      this chapter. In this version of the game, the computer guesses a number between 1 (lowerBound) and 100 (upperBound) and the user provides the responses.
+
+      The window should display the computer’s guesses with a label.
+      The user enters a hint in response, by selecting one of a set of command buttons labeled Too small, Too large, and Correct.
+      When the game is over, you should disable these buttons and wait for the user to click New game, as before.
+      Be sure to use the field names provided in the comments in your starter code.
+
+      An example of the program is shown below:
+
+          - figure-8.5-1
+              The user interface for Guessing game is shown. The window has a question, Is the number 50?, followed by four buttons. The buttons are labelled too small, 
+              too large, correct and new game, from left to right. The text Guessing game GUI is written below.

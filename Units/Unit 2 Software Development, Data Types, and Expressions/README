@@ -1,0 +1,130 @@
+Programming Exercise 2.1
+      The tax calculator program of the case study outputs a floating-point number that might show more than two digits of precision.
+
+      Use the round function to modify the program to display at most two digits of precision in the output number.
+
+      Below is an example of the program input and output:
+
+          Enter the gross income: 12345.67
+          Enter the number of dependents: 1
+
+          The income tax is $-130.87
+          
+          
+Programming Exercise 2.2
+      You can calculate the surface area of a cube if you know the length of an edge.
+
+      Write a program that takes the length of an edge (an integer) as input and prints the cube’s surface area as output.
+
+      An example of the program input and output is shown below:
+
+          Enter the cube's edge: 4
+
+          The surface area is 96 square units.
+
+
+Programming Exercise 2.3
+      Five Star Retro Video rents VHS tapes and DVDs to the same connoisseurs who like to buy LP record albums. The store rents new videos for $3.00 a night, and oldies for $2.00 a night.
+
+      Write a program that the clerks at Five Star Retro Video can use to calculate the total charge for a customer’s video rentals.
+
+      The program should prompt the user for the number of each type of video and output the total cost.
+
+      An example of the program input and output is shown below:
+
+          Enter the number of new videos: 3
+          Enter the number of oldies: 2
+
+          The total cost is $13.0
+
+
+Programming Exercise 2.4
+      Write a program that takes the radius of a sphere (a floating-point number) as input and then outputs the sphere’s:
+
+      1. Diameter (2 × radius)
+      2. Circumference (diameter × π)
+      3. Surface area (4 × π × radius2)
+      4. Volume (4/3 × π × radius3)
+      
+      For convenience, the program can import the math module.
+
+      Below is an example of the program input and output:
+
+          Radius = 5
+
+          Diameter     : 10.0
+          Circumference: 31.41592653589793
+          Surface area : 314.1592653589793
+          Volume       : 523.5987755982989
+
+
+Programming Exercise 2.5
+      An object’s momentum is its mass multiplied by its velocity.
+
+      Write a program that accepts an object’s mass (in kilograms) and velocity (in meters per second) as inputs, and then outputs its momentum.
+
+      Below is an example of the progam input and output:
+
+          Mass: 5
+          Velocity: 2.5
+
+          The object's momentum is 12.5
+
+
+Programming Exercise 2.6
+      The kinetic energy of a moving object is given by the formula KE = ½mv2 where m is the object’s mass and v is its velocity.
+
+      Modify the program you created in Project 5 so that it prints the object’s kinetic energy as well as its momentum.
+
+      Below is an example of the progam input and output:
+
+          Mass: 5
+          Velocity: 2.5
+
+          The object's momentum is 12.5
+          The object's kinetic energy is 15.625
+
+
+Programming Exercise 2.7
+      Write a program that calculates and prints the number of minutes in a year.
+
+      Assume the following:
+
+        - 1 year = 365 days (Ignore leap years)
+        - 1 day = 24 hours
+        - 1 hour = 60 minutes
+      
+      Below is an example of the correct output format:
+
+          The number of minutes in a year is X
+
+
+Programming Exercise 2.8
+      Light travels at 3 × 108 meters per second. A light-year is the distance a light beam travels in one year.
+
+      Write a program that calculates and displays the value of a light-year.
+
+      Useful facts:
+
+          Seconds in a year = 365×24×602
+          Rate = 3×108 meters per second
+          
+      Below is an example of the correct output format:
+
+          Light travels X meters in a year.
+
+
+Programming Exercise 2.10
+      An employee’s total weekly pay equals the hourly wage multiplied by the total number of regular hours, plus any overtime pay.
+
+      Overtime pay equals the total overtime hours multiplied by 1.5 times the hourly wage.
+
+      Write a program that takes as inputs the hourly wage, total regular hours, and total overtime hours and displays an employee’s total weekly pay.
+
+      Below is an example of the program inputs and output:
+
+          Enter the wage: $15.50
+          Enter the regular hours: 40
+          Enter the overtime hours: 12
+
+          The total weekly pay is $899.0

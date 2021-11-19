@@ -1,0 +1,143 @@
+Programming Exercise 5.1
+      A group of statisticians at a local college has asked you to create a set of functions that compute the median and mode of a set of numbers. Define these functions, 
+      median and mode, in a module named stats.py. Also include a function named mean, which computes the average of a set of numbers. Each function should expect a list of 
+      numbers as an argument and return a single number. Each function should return 0 if the list is empty. Include a main function that tests the three statistical functions
+      using the following list defined in main:
+
+      lyst = [3, 1, 7, 1, 4, 10]
+
+      An example of the program output is shown below:
+
+          List: [3, 1, 7, 1, 4, 10]
+          Mode: 1
+          Median: 3.5
+          Mean: 4.33333333333333
+
+
+Programming Exercise 5.2
+      Write a program that allows the user to navigate the lines of text in a file. The program should prompt the user for a filename and input the lines of text into a list.
+      The program then enters a loop in which it prints the number of lines in the file and prompts the user for a line number. Actual line numbers range from 1 to the number 
+      of lines in the file. If the input is 0, the program quits. Otherwise, the program prints the line associated with that number.
+
+      An example file and the program input and output is shown below:
+
+      example.txt
+
+        Line 1.
+        Line 2.
+        Line 3.
+
+          Enter the input file name: example.txt
+
+          The file has 3 lines.
+          Enter a line number [0 to quit]: 2
+          2 :  Line 2.
+          The file has 3 lines.
+          Enter a line number [0 to quit]: 4
+          ERROR: line number must be less than 3.
+          The file has 3 lines.
+          Enter a line number [0 to quit]: 0
+
+      Make sure the program gracefully handles a user entering a line number that is too high.
+
+
+Programming Exercise 5.5
+      In Chapter 4, we developed an algorithm for converting from binary to decimal. You can generalize this algorithm to work for a representation in any base. Instead of 
+      using a power of 2, you will write a program that converts any base between 2 and 16. Recall that for numbers 10 - 15 we use letters A - F.
+
+      In convert.py, define a function named repToDecimal that expects two arguments, a string, and an integer. The second argument should be the base. For example, 
+      repToDecimal("10", 8) returns 8, whereas repToDecimal("10", 16) returns 16.
+
+          - The function should use a lookup table to find the value of any digit. Make sure that this table (it is actually a dictionary) is initialized before the function 
+            is defined.
+          - For its keys, use the 10 decimal digits (all strings) and the letters A . . . F (all uppercase). The value stored with each key should be the integer that the digit
+            represents. (The letter A associates with the integer value 10, and so on.)
+          - The main loop of the function should convert each digit to uppercase, look up its value in the table, and use this value in the computation.
+
+      A main function that tests the conversion function with numbers in several bases has been provided.
+
+      An example of main and correct output is shown below:
+
+          def main():
+              print(repToDecimal('10', 10))
+              print(repToDecimal('10', 8))
+              print(repToDecimal('10', 2))
+              print(repToDecimal('10', 16))
+
+          Example Output: 
+              10
+              8
+              2
+              16
+
+
+Programming Exercise 5.6
+      In convert.py, define a function decimalToRep that returns the representation of an integer in a given base.
+
+      - The two arguments should be the integer and the base.
+      - The function should return a string.
+      - It should use a lookup table that associates integers with digits.
+
+      A main function that tests the conversion function with numbers in several bases has been provided.
+
+      An example of main and correct output is shown below:
+
+          def main():
+              """Tests the function."""
+              print(decimalToRep(10, 10))
+              print(decimalToRep(10, 8))
+              print(decimalToRep(10, 2))
+              print(decimalToRep(10, 16))
+
+          Example Output:        
+              10
+              12
+              1010
+              A
+
+
+Programming Exercise 5.7
+      Write a program that inputs a text file. The program should print the unique words in the file in alphabetical order. Uppercase words should take precedence 
+      over lowercase words. For example, 'Z' comes before 'a'.
+
+      The input file can contain one or more sentences, or be a multiline list of words.
+
+      An example input file is shown below:
+
+          example.txt
+
+              the quick brown fox jumps over the lazy dog
+
+      An example of the program's output is shown below:
+
+          Enter the input file name: example.txt
+
+              brown
+              dog
+              fox
+              jumps
+              lazy
+              over
+              quick
+              the
+
+      Create and populate your own text file for development.
+
+
+Programming Exercise 5.8
+      A file concordance tracks the unique words in a file and their frequencies. Write a program that displays a concordance for a file. The program should output 
+      the unique words and their frequencies in alphabetical order. Variations are to track sequences of two words and their frequencies, or n words and their frequencies.
+
+      Below is an example file along with the program input and output:
+
+          example.txt
+
+              I AM SAM I AM SAM SAM I AM
+
+      Enter the input file name: example.txt
+
+          AM 3
+          I 3
+          SAM 3
+
+      The program should handle input files of varying length (lines).

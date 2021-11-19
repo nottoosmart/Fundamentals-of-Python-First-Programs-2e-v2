@@ -1,0 +1,73 @@
+Programming Exercise 4.1
+      Write a script that inputs a line of plaintext and a distance value and outputs an encrypted text using a Caesar cipher.
+
+      The script should work for any printable characters.
+
+      An example of the program input and output is shown below:
+
+          Enter a message: Hello world!
+          Enter the distance value: 4
+
+          Lipps${svph%
+
+
+
+Programming Exercise 4.2
+      Write a script that inputs a line of encrypted text and a distance value and outputs plaintext using a Caesar cipher.
+
+      The script should work for any printable characters.
+
+      An example of the program input and output is shown below:
+
+          Enter the coded text: Lipps${svph%
+          Enter the distance value: 4
+
+          Hello world!
+
+Programming Exercise 4.3
+     SEE README IN FOLDER
+     
+Programming Exercise 4.4
+      SEE README IN FOLDER
+      
+Programming Exercise 4.5
+      SEE README IN FOLDER
+      
+Programming Exercise 4.6
+      Modify the scripts of Projects 1 and 2 to encrypt and decrypt entire files of text.
+
+      An example of the program interface is shown below:
+
+          Enter the input file name: encrypted.txt
+          Enter the output file name: a
+          Enter the distance value: 3
+
+
+Programming Exercise 4.7
+      Write a script that decrypts a message coded by the method used in Project 6.
+
+      Method used in project 6:
+
+          1. Add 1 to each character’s numeric ASCII value.
+          2. Convert it to a bit string.
+          3. Shift the bits of this string one place to the left.
+
+      A single-space character in the encrypted string separates the resulting bit strings.
+
+      An example of the program input and output is shown below:
+
+          Enter the coded text: 0010011 1001101 1011011 1011011 1100001 000011 1110001 1100001 1100111 1011011 1001011 000101
+
+          Hello world!
+
+
+Programming Exercise 4.8
+      Write a script named copyFile.py. This script should prompt the user for the names of two text files. The contents of the first file should be input and written to 
+      the second file.
+
+      An example of the program input is shown below:
+
+          Enter the input file name: copyFrom.txt
+          Enter the output file name: copyTo.txt
+
+      Output: After running the program, a file named copyTo.txt will be outputted that contains the text from the copyFrom.txt file.

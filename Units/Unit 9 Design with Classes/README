@@ -1,0 +1,88 @@
+Programming Exercise 9.1
+      Add three methods to the Student class that compare twoStudent objects. One method (__eq__) should test for equality. A second method (__lt__) should test for less than.
+      The third method (__ge__) should test for greater than or equal to. In each case, the method returns the result of the comparison of the two students’ names. Include a 
+      main function that tests all of the comparison operators.
+
+      Note: The program should output in the following format:
+
+          False: False
+          True: True
+          True: True
+          False: False
+          True: True
+          True: True
+          True: True
+          True: True
+          True: True
+          True: True
+
+
+Programming Exercise 9.2
+      This project assumes that you have completed Project 1. Place several Student objects into a list and shuffle it. Then run the sort method with this list and display 
+      all of the students’ information. Print to the console the unsorted list first of all students followed by the sorted list of all students
+
+      Note: The sorted list should output in the following format:
+
+          Sorted list of students:
+          Name: Name1
+          Scores: 0 0 0 0 0 0 0 0 0 0
+          Name: Name2
+          Scores: 0 0 0 0 0 0 0 0 0 0
+          Name: Name3
+          Scores: 0 0 0 0 0 0 0 0 0 0
+          Name: Name4
+          Scores: 0 0 0 0 0 0 0 0 0 0
+          Name: Name5
+          Scores: 0 0 0 0 0 0 0 0 0 0
+
+      Hint: Use the print function with a Student object as an argument to print the Student object in the format specified above.
+
+
+Programming Exercise 9.3
+      SEE README FILE IN FOLDER
+      
+      
+Programming Exercise 9.5
+      The Doctor program described in Chapter 5 combines the data model of a doctor and the operations for handling user interaction. Restructure this program according 
+      to the model/view pattern so that these areas of responsibility are assigned to separate sets of classes.
+
+      The program should include a Doctor class with an interface that allows one to obtain a greeting, a signoff message, and a reply to a patient’s string.
+
+      To implement the greeting, define a method named greeting for the Doctor class. To implement the signoff message, define a method named farewell for the Doctor 
+      class. Both greeting and farewell should return a string with a greeting or farewell message respectively. The reply function is defined for you, it should be added 
+      as a method for the Doctor class.
+
+      The rest of the program, in a separate main program module, handles the user’s interactions with the Doctor object. Develop this program with a terminal-based user 
+      interface.
+
+      Note: The program should output in the following format:
+
+          Hello, how can I help you today?
+          > I am sick
+          You seem to think that you are sick?
+          > Yes
+          And what do you think about this?
+          > I am not feeling good
+          Did I just hear you say that you are not feeling good?
+          > Yes
+          Why do you believe that Yes?
+          > My nose is running
+          I would like to hear more about that.
+          > I have a headache too
+          You seem to think that you have a headache too?
+          > Correct
+          Go on.
+          > It doesn't stop
+          Did I just hear you say that It doesn't stop?
+          > Correct
+          Go on.
+          > That's it
+          And what do you think about this?
+          > quit
+          Have a nice day!
+
+
+Programming Exercise 9.6
+      SEE README FILE IN FOLDER
+
+

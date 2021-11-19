@@ -1,0 +1,144 @@
+Programming Exercise 6.1
+      Package Newton’s method for approximating square roots (Case Study: Approximating Square Roots) in a function named newton. This function expects the input number as 
+      an argument and returns the estimate of its square root. The program should also include a main function that allows the user to compute the square roots of inputs 
+      from the user and python's estimate of its square roots until the enter/return key is pressed.
+
+      An example of the program input and output is shown below:
+
+          Enter a positive number or enter/return to quit: 2
+          The program's estimate is 1.4142135623746899
+          Python's estimate is 1.4142135623730951
+          Enter a positive number or enter/return to quit: 4
+          The program's estimate is 2.0000000929222947
+          Python's estimate is 2.0
+          Enter a positive number or enter/return to quit: 9
+          The program's estimate is 3.000000001396984
+          Python's estimate is 3.0
+          Enter a positive number or enter/return to quit
+
+
+Programming Exercise 6.2
+      Convert Newton’s method for approximating square roots in Project 1 to a recursive function named newton. (Hint: The estimate of the square root should be passed as 
+      a second argument to the function.)
+
+      An example of the program input and output is shown below:
+
+          Enter a positive number or enter/return to quit: 2
+
+          The program's estimate is 1.4142135623746899
+          Python's estimate is      1.4142135623730951
+          Enter a positive number or enter/return to quit
+
+
+Programming Exercise 6.3
+      Elena complains that the recursive newton function in Project 2 includes an extra argument for the estimate. The function’s users should not have to provide this value,
+      which is always the same, when they call this function. Modify the definition of the function so that it uses a keyword argument with the appropriate default value, and 
+      call the function without a second argument to demonstrate that it solves this problem.
+
+      An example of the program input and output is shown below:
+
+          Enter a positive number or enter/return to quit: 2
+
+          The program's estimate is 1.4142135623746899
+          Python's estimate is      1.4142135623730951
+          Enter a positive number or enter/return to quit
+
+
+Programming Exercise 6.4
+      Restructure Newton's method (Case Study: Approximating Square Roots) by decomposing it into three cooperating functions: newton, limitReached, and improveEstimate.
+
+      The newton function can use either the recursive strategy of Project 2 or the iterative strategy of the Approximating Square Roots Case Study. The task of testing for 
+      the limit is assigned to a function named limitReached, whereas the task of computing a new approximation is assigned to a function named improveEstimate. Each function
+      expects the relevant arguments and returns an appropriate value.
+
+      An example of the program input and output is shown below:
+
+          Enter a positive number or enter/return to quit: 2
+
+          The program's estimate is 1.4142135623746899
+          Python's estimate is      1.4142135623730951
+          Enter a positive number or enter/return to quit
+
+
+Programming Exercise 6.5
+      A list is sorted in ascending order if it is empty or each item except the last one is less than or equal to its successor. Define a predicate isSorted that expects a 
+      list as an argument and returns True if the list is sorted, or returns False otherwise.
+
+      (Hint: For a list of length 2 or greater, loop through the list and compare pairs of items, from left to right, and return False if the first item in a pair is greater.)
+
+      Below is an example of a main function and the associated output:
+
+          def main():
+              lyst = []
+              print(isSorted(lyst))
+              lyst = [1]
+              print(isSorted(lyst))
+              lyst = list(range(10))
+              print(isSorted(lyst))
+              lyst[9] = 3
+              print(isSorted(lyst))
+
+          Example Output:    
+              True
+              True
+              True
+              False
+
+
+Programming Exercise 6.6
+      Add a command to this chapter’s case study program that allows the user to view the contents of a file in the current working directory. When the command is selected, 
+      the program should display a list of filenames and a prompt for the name of the file to be viewed.
+
+      Be sure to include error recovery in the program. If the user enters a filename that does not exist they should be prompted to enter a filename that does exist.
+
+      An example of the program input and output is shown below:
+
+          /root/sandbox
+          1   List the current directory
+          2   Move up
+          3   Move down
+          4   Number of files in the directory
+          5   Size of the directory in bytes
+          6   Search for a file name
+          7   View the contents of a file
+          8   Quit the program
+          Enter a number: 7
+
+          Files in /root/sandbox:
+          filesys.py
+          example.txt
+          Enter a file name from these names: example.txt
+
+          THIS IS CONTENT OF AN EXAMPLE FILE.
+
+          /root/sandbox
+          1   List the current directory
+          2   Move up
+          3   Move down
+          4   Number of files in the directory
+          5   Size of the directory in bytes
+          6   Search for a file name
+          7   View the contents of a file
+          8   Quit the program
+          Enter a number: 8
+
+          Have a nice day!
+
+
+Programming Exercise 6.7
+      Write a recursive function, displayFiles, that expects a pathname as an argument. The path name can be either the name of a file or the name of a directory. If the 
+      pathname refers to a file, its filepath is displayed, followed by its contents, like so:
+
+          File name: file_path
+          Lorem ipsum dolor sit amet, 
+          consectetur adipiscing elit...
+
+      Otherwise, if the pathname refers to a directory, the function is applied to each name in the directory, like so:
+
+          Directory name: directory_path
+          File name: file_path1 Lorem ipsum dolor sit amet...
+          File name: file_path2 Lorem ipsum dolor sit amet...
+          ...
+
+      Test this function in a new program.
+

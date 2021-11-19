@@ -1,0 +1,237 @@
+Programming Exercise 3.1
+      Write a program that accepts the lengths of three sides of a triangle as inputs.
+
+      The program output should indicate whether or not the triangle is an equilateral triangle.
+
+      - Use The triangle is equilateral. and The triangle is not equilateral. as your final outputs.
+
+      An example of the program inputs and output is shown below:
+
+          Enter the first side: 2
+          Enter the second side: 2
+          Enter the third side: 2
+
+          The triangle is equilateral.
+    
+
+Programming Exercise 3.2
+      Write a program that accepts the lengths of three sides of a triangle as inputs. The program output should indicate whether or not the triangle is a right triangle.
+
+      Recall from the Pythagorean theorem that in a right triangle, the square of one side equals the sum of the squares of the other two sides.
+
+      - Use The triangle is a right triangle. and The triangle is not a right triangle. as your final outputs.
+
+      An example of the program input and proper output format is shown below:
+
+          Enter the first side: 3
+          Enter the second side: 4
+          Enter the third side: 5
+
+          The triangle is a right triangle.
+
+
+Programming Exercise 3.3
+      Modify the guessing-game program so that the user thinks of a number that the computer must guess.
+
+      - The computer must make no more than the minimum number of guesses, and it must prevent the user from cheating by entering misleading hints.
+      - Use I'm out of guesses, and you cheated and Hooray, I've got it in X tries as your final output.
+
+      (Hint: Use the math.log function to compute the minimum number of guesses needed after the lower and upper bounds are entered.)
+
+      Below are two test runs of the program:
+          -------------------------------------
+          Enter the smaller number: 0
+          Enter the larger number: 10
+
+          0 10
+          Your number is 5
+          Enter =, <, or >: <
+          0 4
+          Your number is 2
+          Enter =, <, or >: >
+          3 4
+          Your number is 3
+          Enter =, <, or >: =
+          Hooray, I've got it in 3 tries!
+          -------------------------------------
+          -------------------------------------    
+          Enter the smaller number: 0
+          Enter the larger number: 50
+          0 50
+          Your number is 25
+          Enter =, <, or >: <
+          0 24
+          Your number is 12
+          Enter =, <, or >: <
+          0 11
+          Your number is 5
+          Enter =, <, or >: <
+          0 4
+          Your number is 2
+          Enter =, <, or >: <
+          0 1
+          Your number is 0
+          Enter =, <, or >: >
+          1 1
+          Your number is 1
+          Enter =, <, or >: >
+          I'm out of guesses, and you cheated!
+          -------------------------------------
+    
+
+Programming Exercise 3.4
+      A standard science experiment is to drop a ball and see how high it bounces. Once the “bounciness” of the ball has been determined, the ratio gives a bounciness index.
+
+      For example, if a ball dropped from a height of 10 feet bounces 6 feet high, the index is 0.6, and the total distance traveled by the ball is 16 feet after one bounce. 
+      If the ball were to continue bouncing, the distance after two bounces would be 10 ft + 6 ft +6 ft + 3.6 ft = 25.6 ft. Note that the distance traveled for each 
+      successive bounce is the distance to the floor plus 0.6 of that distance as the ball comes back up.
+
+      Write a program that lets the user enter the initial height from which the ball is dropped, the bounciness index, and the number of times the ball is allowed to continue
+      bouncing. Output should be the total distance traveled by the ball.
+
+      Below is an example of the program input and output:
+
+          Enter the height from which the ball is dropped: 25
+          Enter the bounciness index of the ball: .5
+          Enter the number of times the ball is allowed to continue bouncing: 3
+
+          Total distance traveled is: 65.625 units.
+
+
+Programming Exercise 3.5
+      A local biologist needs a program to predict population growth. The inputs would be:
+
+      The initial number of organisms, as an int
+      The rate of growth (a real number greater than 1), as a float
+      The number of hours it takes to achieve this rate, as an int
+      A number of hours during which the population grows, as an int
+      For example, one might start with a population of 500 organisms, a growth rate of 2, and a growth period to achieve this rate of 6 hours. Assuming that none of the
+      organisms die, this would imply that this population would double in size every 6 hours. Thus, after allowing 6 hours for growth, we would have 1000 organisms, and 
+      after 12 hours, we would have 2000 organisms.
+
+      Write a program that takes these inputs and displays a prediction of the total population.
+
+      An example of the program input and output is shown below:
+
+          Enter the initial number of organisms: 10
+          Enter the rate of growth [a real number > 1]: 2
+          Enter the number of hours to achieve the rate of growth: 2
+          Enter the total hours of growth: 6
+
+          The total population is 80
+
+
+Programming Exercise 3.6
+      The German mathematician Gottfried Leibniz developed the following method to approximate the value of π:
+
+      π/4 = 1 - 1/3 + 1/5 - 1/7 + . . .
+
+      Write a program that allows the user to specify the number of iterations used in this approximation and that displays the resulting value.
+
+      An example of the program input and output is shown below:
+
+          Enter the number of iterations: 5
+
+          The approximation of pi is 3.3396825396825403
+
+
+Programming Exercise 3.7
+      Teachers in most school districts are paid on a schedule that provides a salary based on their number of years of teaching experience.
+
+      For example, a beginning teacher in the Lexington School District might be paid $30,000 the first year. For each year of experience after this first year, 
+      up to 10 years, the teacher receives a 2% increase over the preceding value.
+
+      Write a program that displays a salary schedule, in tabular format, for teachers in a school district. The inputs are:
+
+      1. Starting salary
+      2. Annual percentage increase
+      3. Number of years for which to print the schedule
+
+      Each row in the schedule should contain the year number and the salary for that year
+
+      An example of the program input and output is shown below:
+
+          Enter the starting salary: $30000
+          Enter the annual % increase: 2
+          Enter the number of years: 10
+
+          Year   Salary
+          -------------
+           1    30000.00
+           2    30600.00
+           3    31212.00
+           4    31836.24
+           5    32472.96
+           6    33122.42
+           7    33784.87
+           8    34460.57
+           9    35149.78
+          10    35852.78
+
+
+Programming Exercise 3.8
+      The greatest common divisor of two positive integers, A and B, is the largest number that can be evenly divided into both of them. Euclid’s algorithm can be used to find 
+      the greatest common divisor (GCD) of two positive integers. You can use this algorithm in the following manner:
+
+      1. Compute the remainder of dividing the larger number by the smaller number.
+      2. Replace the larger number with the smaller number and the smaller number with the remainder.
+      3. Repeat this process until the smaller number is zero.
+
+      The larger number at this point is the GCD of A and B. Write a program that lets the user enter two integers and then prints each step in the process of using the 
+      Euclidean algorithm to find their GCD.
+
+      An example of the program input and output is shown below:
+
+          Enter the smaller number: 5
+          Enter the larger number: 15
+
+          The greatest common divisor is 5
+
+
+Programming Exercise 3.10
+      The credit plan at TidBit Computer Store specifies a 10% down payment and an annual interest rate of 12%. Monthly payments are 5% of the listed purchase price, minus the 
+      down payment.
+
+      Write a program that takes the purchase price as input. The program should display a table, with appropriate headers, of a payment schedule for the lifetime of the loan. 
+      Each row of the table should contain the following items:
+
+        1. The month number (beginning with 1)
+        2. The current total balance owed
+        3. The interest owed for that month
+        4. The amount of principal owed for that month
+        5. The payment for that month
+        6. The balance remaining after payment
+
+      The amount of interest for a month is equal to balance × rate / 12.
+
+      The amount of principal for a month is equal to the monthly payment minus the interest owed.
+
+      An example of the program input and output is shown below:
+
+          Enter the puchase price: 200
+
+          Month  Starting Balance  Interest to Pay  Principal to Pay  Payment  Ending Balance
+           1         180.00           1.80             7.20             9.00           172.80
+           2         172.80           1.73             7.27             9.00           165.53
+           3         165.53           1.66             7.34             9.00           158.18
+           4         158.18           1.58             7.42             9.00           150.77
+           5         150.77           1.51             7.49             9.00           143.27
+           6         143.27           1.43             7.57             9.00           135.71
+           7         135.71           1.36             7.64             9.00           128.06
+           8         128.06           1.28             7.72             9.00           120.34
+           9         120.34           1.20             7.80             9.00           112.55
+          10         112.55           1.13             7.87             9.00           104.67
+          11         104.67           1.05             7.95             9.00            96.72
+          12          96.72           0.97             8.03             9.00            88.69
+          13          88.69           0.89             8.11             9.00            80.57
+          14          80.57           0.81             8.19             9.00            72.38
+          15          72.38           0.72             8.28             9.00            64.10
+          16          64.10           0.64             8.36             9.00            55.74
+          17          55.74           0.56             8.44             9.00            47.30
+          18          47.30           0.47             8.53             9.00            38.77
+          19          38.77           0.39             8.61             9.00            30.16
+          20          30.16           0.30             8.70             9.00            21.46
+          21          21.46           0.21             8.79             9.00            12.68
+          22          12.68           0.13             8.87             9.00             3.80
+          23           3.80           0.00             3.80             3.80             0.00
+
